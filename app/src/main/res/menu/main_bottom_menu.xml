@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainSearchFragment"
+        android:icon="@drawable/selector_main_search"
+        android:title="@string/main_bottom_search_text" />
+
+    <item
+        android:id="@+id/mainEnrollFragment"
+        android:icon="@drawable/selector_main_enroll"
+        android:title="@string/main_bottom_enroll_text" />
+
+    <item
+        android:id="@+id/mainMyFragment"
+        android:icon="@drawable/selector_main_my"
+        android:title="@string/main_bottom_my_text" />
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_home.xml"
+    app:startDestination="@id/mainSearchFragment">
+    <keep_state_fragment
+        android:id="@+id/mainSearchFragment"
+        android:name="com.mtjin.bungsegwon.views.main.search.MainSearchFragment"
+        android:label="fragment_main_search"
+        tools:layout="@layout/fragment_main_search" />
+
+    <keep_state_fragment
+        android:id="@+id/mainEnrollFragment"
+        android:name="com.mtjin.bungsegwon.views.main.enroll.MainEnrollFragment"
+        android:label="fragment_main_enroll"
+        tools:layout="@layout/fragment_main_enroll" />
+
+    <keep_state_fragment
+        android:id="@+id/mainMyFragment"
+        android:name="com.mtjin.bungsegwon.views.main.my.MainMyFragment"
+        android:label="fragment_main_my"
+        tools:layout="@layout/fragment_main_my" />
+
+</navigation>

@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "749958097910",
+    "project_id": "bungsegwon",
+    "storage_bucket": "bungsegwon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749958097910:android:5ca981ea08158e399835d7",
+        "android_client_info": {
+          "package_name": "com.mtjin.bungsegwon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749958097910-6lj5l4e5qsve28rm6208jovupimg5c8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtjin.bungsegwon",
+            "certificate_hash": "4d5394fa48bacf8b3757dbf79c8a3cab31cf57e5"
+          }
+        },
+        {
+          "client_id": "749958097910-f956a4rbavo5t2kgcv8h7i2vce22kcau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtjin.bungsegwon",
+            "certificate_hash": "2594505716124fb73c0d9ca0633d9dd80b38d943"
+          }
+        },
+        {
+          "client_id": "749958097910-ik7dq6usr6hnn24ecg00h147hgm8fs1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtjin.bungsegwon",
+            "certificate_hash": "4789626ffa391fbc59b0b35b4f0454184a8021c5"
+          }
+        },
+        {
+          "client_id": "749958097910-kbt4ketvbkhnbseaf6dtp1i3k5l8i1pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtjin.bungsegwon",
+            "certificate_hash": "61c2d9b9968a406d99148cedb285925843397fd3"
+          }
+        },
+        {
+          "client_id": "749958097910-lssh61hqhoh51ma5mifemkvdq6l14mqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtjin.bungsegwon",
+            "certificate_hash": "804c9896a67978c6ebda2480e6977d8137fdac61"
+          }
+        },
+        {
+          "client_id": "749958097910-sr37thk8thaoies9knab95ce6ac9fgf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRTOBaErPBW6j1ots4WfWyh_mKqncxfDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749958097910-sr37thk8thaoies9knab95ce6ac9fgf3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "749958097910-gesn2k0c2e91pal0bviis7kiuc266sa6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.Bungsegwon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

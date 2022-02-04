@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_e5e5e5"
+        tools:context=".views.main.my.MainMyFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_top_login"
+            android:layout_width="0dp"
+            android:layout_height="167dp"
+            android:background="@drawable/rect_round_ffd464_bottom_radius_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="12.45dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_setting" />
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32.45dp"
+                android:text="@string/login_e_text"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_setting" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/need_text"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/text_login"
+                app:layout_constraintTop_toBottomOf="@id/text_login" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tv_name"
+                app:layout_constraintStart_toEndOf="@id/tv_name"
+                app:layout_constraintTop_toTopOf="@id/tv_name"
+                app:srcCompat="@drawable/ic_right_arrow_25" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text_my_favorite_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28.5dp"
+            android:text="@string/my_favorite_market_text"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_top_login" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_my_favorite_market_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.5dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_my_favorite_market"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_my_favorite_market"
+            app:srcCompat="@drawable/ic_more_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_favorite_markets"
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10.5dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_my_favorite_market"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_my_market" />
+
+        <TextView
+            android:id="@+id/text_my_enroll_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26.5dp"
+            android:text="@string/my_enroll_market_text"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_my_favorite_market"
+            app:layout_constraintTop_toBottomOf="@id/rv_my_favorite_markets" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_my_enroll_market_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.5dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_my_enroll_market"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_my_enroll_market"
+            app:srcCompat="@drawable/ic_more_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_enroll_markets"
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10.5dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_my_enroll_market"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_my_market" />
+
+        <TextView
+            android:id="@+id/text_my_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26.5dp"
+            android:text="@string/my_comment_text"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_my_enroll_market"
+            app:layout_constraintTop_toBottomOf="@id/rv_my_enroll_markets" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_my_comment_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15.5dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_my_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_my_comment"
+            app:srcCompat="@drawable/ic_more_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_comments"
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10.5dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_my_comment"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_my_comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

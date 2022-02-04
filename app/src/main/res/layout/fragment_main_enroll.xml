@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.main.enroll.MainEnrollFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_market" />
+
+        <TextView
+            android:id="@+id/text_enroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57.7dp"
+            android:text="@string/please_enroll_text"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/iv_market"
+            app:layout_constraintStart_toStartOf="@id/iv_market"
+            app:layout_constraintTop_toBottomOf="@id/iv_market" />
+
+        <TextView
+            android:id="@+id/text_enroll_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="17px"
+            android:text="@string/near_market_notification_text"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="@id/iv_market"
+            app:layout_constraintStart_toStartOf="@id/iv_market"
+            app:layout_constraintTop_toBottomOf="@id/text_enroll" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_enroll"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/rect_round_ffd464_radius_8"
+            android:onClick="marketEnrollClick"
+            android:text="@string/go_enroll_text"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
